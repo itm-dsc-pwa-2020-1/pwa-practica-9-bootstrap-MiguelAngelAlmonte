@@ -1,0 +1,132 @@
+.container {
+    max-width: 960px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background:url(Front_VACACIONES_1.jpg);
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  .position-relative{
+    background:url(Front_VACACIONES_1.jpg);
+    border-image-width: 900px;
+    height: 850px;
+  }
+  .articulo1f{
+    background:url(fondo-verde.jpg);
+    height: 700px;
+  }
+  .articulo1{
+    background:url(articulo_1.png);
+    width: 55%;
+    height:390px;
+    border-radius: 21px 21px 21px 21px;
+  }
+  .articulo2f{
+    background:url(fondopastel.jpg);
+  }
+  .articulo2{
+    background:url(articulo_2.png);
+    width: 55%;
+    height:390px;
+    border-radius: 21px 21px 21px 21px;
+  }
+  .articulo3f{
+    background:url(fondo-acuarela.jpg);
+    height: 700px;
+  }
+  .articulo3{
+    background:url(articulo_3.png);
+    width: 55%;
+    height:390px;
+    border-radius: 21px 21px 21px 21px;
+  }
+  .articulo4f{
+    background:url(vector-green-.jpg);
+  }
+  .articulo4{
+    background:url(articulo_4.png);
+    width: 55%;
+    height:390px;
+    border-radius: 21px 21px 21px 21px;
+  }
+
+  
+  .caja8 {
+    grid-column: 2/4;
+  }
+  .caja9{
+    grid-column: 4/5;
+  }
+  .caja10{
+    grid-column: 1/5;
+  }
+  .caja11{
+    grid-column: 1/5;
+  }
+  
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+  
+  .overflow-hidden { overflow: hidden; }
+  
